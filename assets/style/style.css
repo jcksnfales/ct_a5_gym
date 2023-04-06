@@ -1,0 +1,26 @@
+* {
+   /* border: 1px solid red; */
+}
+
+/* fonts sourced from Google Fonts */
+@font-face {
+    font-family: 'Anton';
+    src: url(Anton-Regular.ttf);
+}
+@font-face {
+    font-family: 'IBMPlexSans';
+    src: url(IBMPlexSans-Light.ttf);
+}
+.type-heading {
+    font-family: 'Anton', sans-serif;
+}
+.type-body {
+    font-family: 'IBMPlexSans'
+}
+.navbar-brand {
+    font-family: 'Anton', sans-serif;
+    font-size: 1.75em;
+}
+.nav-link {
+    font-family: 'IBMPlexSans'
+}
