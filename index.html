@@ -5,34 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home | Gainstown Gym</title>
-    <meta name="Description" content="Gainstown Gym: Swoleness for All"/>
+    <meta name="Description" content="Gainstown Gym: Strength for All"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="assets/style/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
 </head>
 <body class="bg-black">
     <!-- navbar -->
-    <div id="navcontent"></div>
-    <script>$("#navcontent").load("navbar.html")</script>
+    <nav class="navbar navbar-expand-lg bg-black navbar-dark py-3 fixed-top">
+        <div class="container w-75 px-0">
+            <a href="" class="navbar-brand display-1">GAINSTOWN GYM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto mt-2">
+                    <li class="nav-item px-2">
+                        <a href="index.html" class="nav-link active" title="You are here.">Home</a>
+                    </li>
+                    <li class="nav-item px-2 me-2 mb-2">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item ps-2">
+                        <a href="login.html" class="nav-link btn btn-sm btn-outline-secondary px-3">Sign In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- weightroom image -->
     <section id="image">
-        <div class="container-fluid px-0" style="position: relative; min-height:75vmin">
-            <img src="assets/img/weightroom1-samuel-girven-unsplash.jpg" alt="The weight room." class="w-100" style="position: absolute; bottom: 0; z-index: -1;">
+        <div class="container-fluid px-0" style="position: relative; min-height:67.5vmin">
+            <img src="assets/img/weightroom1-samuel-girven-unsplash.jpg" alt="The weight room. (Image credit: Samuel Girven, Unsplash)" class="w-100" style="position: absolute; bottom: 0; z-index: -1;">
         </div>
     </section>
+
     <!-- page content -->
     <section id="content">
-        <div class="container-fluid w-75 mt-4 px-0 text-white bg-black">
+        <div class="container-fluid w-75 mt-4 px-0 text-white">
             <div class="h3 mb-0 type-body">WELCOME TO</div>
             <div class="display-1 type-heading">GAINSTOWN</div>
         </div>
+        <div class="container-fluid w-75 mt-3 px-3 text-secondary">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas enim laborum expedita totam cum aperiam voluptatum labore accusamus quisquam, cumque inventore natus nobis cupiditate dignissimos a numquam? Explicabo, dolore dicta. Labore dignissimos id incidunt officia quaerat quibusdam perspiciatis, aperiam eius fugiat dolore temporibus voluptates magni aspernatur quos ipsum et consequuntur?
+            </p>
+        </div>
+        <div class="d-flex justify-content-center align-items-center pt-3 text-secondary type-body">
+            <a href="login.html#register" class="btn btn-outline-secondary">Register</a>
+            &nbsp;<small class="mx-1">or</small>&nbsp;
+            <a href="about.html" class="btn btn-sm btn-outline-secondary">Learn More</a>
+        </div>
     </section>
     
-
     <footer>
-
+        <p class="lead text-center my-4 py-1 type-body">&copy; 2023 Jackson Fales</p>
     </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
