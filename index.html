@@ -27,12 +27,20 @@
                         <a href="about.html" class="nav-link">About Us</a>
                     </li>
                     <li class="nav-item ps-2">
-                        <a href="login.html" class="nav-link btn btn-sm btn-outline-secondary px-3">Sign In</a>
+                        <a href="login.html" class="nav-link btn btn-sm btn-outline-secondary px-3" id="loginbutton">Sign In</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <!-- script to swap login button if already "logged in" (not actually a functional backend login system, just a visual change to allow one to access the logout page) -->
+    <script type="text/javascript">
+        if(location.hash == "#loggedin"){
+            var loginButton = document.getElementById("loginbutton");
+            loginButton.setAttribute("href","logout.html");
+            loginButton.innerHTML = "Sign Out"
+        }
+    </script>
 
     <!-- weightroom image -->
     <section id="image">

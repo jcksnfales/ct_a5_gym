@@ -24,14 +24,28 @@
                     <label for="inputPassword" class="ms-1">Password</label>
                     <input type="password" class="form-control bg-black border-secondary text-white" id="inputPassword" placeholder="Enter password">
                 </div>
+                <div class="form-group mb-2 px-1" hidden>
+                    <label for="inputEmail" class="ms-1">Email address</label>
+                    <input type="password" class="form-control bg-black border-secondary text-white" id="inputEmail" placeholder="Enter email" disabled>
+                </div>
                 <!-- <button type="submit" class="btn btn-outline-primary mt-3 w-100">Submit</button> -->
                 <a href="index.html#loggedin" class="btn btn-outline-primary mt-3 w-100" title="This page for mockup purposes only. Does not actually log into anything, just returns you to the home page.">Submit</a>
             </form>
             
-            <a href="#register" class="mx-auto mt-2 text-muted"><small>I don't have an account</small></a>
+            <a href="#register" class="mx-auto mt-2 text-muted" id="registerlink" onclick="swapToRegisterForm()"><small>I don't have an account</small></a>
         </div>
     </div>
 
+    <!-- script to hide/unhide the email input field for registration -->
+    <script type="text/javascript">
+        function swapToRegisterForm(){
+            document.getElementById("registerlink").remove();
+            var emailField = document.getElementById("inputEmail");
+            emailField.disabled = false;
+            emailField.parentNode.hidden = false;
+        }
+        if(location.hash == "#register"){swapToRegisterForm();}
+    </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>
